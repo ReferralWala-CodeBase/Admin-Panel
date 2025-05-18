@@ -8,7 +8,7 @@ const Sidebar = () => {
   const normalClass = "text-gray-700 hover:bg-gray-200 rounded-md px-3 py-2 block";
 
   const handleLogout = () => {
-    localStorage.removeItem("token");
+    localStorage.removeItem("adminToken");
     localStorage.removeItem("userId");
     navigate("/admin-login");
   };

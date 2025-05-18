@@ -16,7 +16,7 @@ const EditJob = () => {
   const [successMsg, setSuccessMsg] = useState(null);
   const [locationSuggestions, setLocationSuggestions] = useState([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
-   const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
   // Refs for Quill editor
   const quillRef = useRef(null);
