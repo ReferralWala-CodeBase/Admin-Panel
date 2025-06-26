@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { FilePlus, Briefcase } from 'lucide-react';
+import { FilePlus, Briefcase ,Wallet2} from 'lucide-react';
 
 const Users = () => {
   const [users, setUsers] = useState([]);
@@ -80,6 +80,13 @@ const Users = () => {
       className="text-indigo-600 hover:text-indigo-800"
     >
       <Briefcase size={22} />
+    </button>
+    <button
+      onClick={() => navigate(`/user-wallet/${user._id || user.id}`)}
+      title="View Wallet"
+      className="text-emerald-600 hover:text-emerald-800"
+    >
+      <Wallet2 size={22} />
     </button>
   </div>
 </td>

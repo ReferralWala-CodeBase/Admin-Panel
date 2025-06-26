@@ -12,6 +12,9 @@ import NotFound from "../pages/NotFound";
 import JobDetail from "../pages/JobDetail";
 import EditJob from "../pages/EditJob";
 import PostedJobs from "../pages/PostedJobs"
+import UserWalletPage from "../pages/UserWalletPage";
+import AdminWithdrawals from "../pages/AdminWithdrawals";
+
 
 export const router = createBrowserRouter([
   {
@@ -34,7 +37,10 @@ export const router = createBrowserRouter([
       { path: "*", element: <NotFound /> }, 
        { path: "adminjob/jobdetail/:id", element: <JobDetail /> },
       { path: "adminjob/edit/:id", element: <EditJob /> },
+      { path: "user-wallet/:userId", element: <UserWalletPage /> },
+      { path: "withdrawals", element: <AdminWithdrawals /> },
       { path: "/posted-jobs/:userId", element:<PostedJobs /> } 
+
 
     ],
   },

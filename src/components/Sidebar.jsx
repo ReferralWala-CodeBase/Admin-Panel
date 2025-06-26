@@ -28,6 +28,9 @@ const Sidebar = () => {
           <NavLink to="/jobs" className={({ isActive }) => (isActive ? activeClass : normalClass)}>
             Jobs
           </NavLink>
+            <NavLink to="/withdrawals" className={({ isActive }) => (isActive ? activeClass : normalClass)}>
+            Withdrawal Requests
+          </NavLink>
            <NavLink to="/settings" className={({ isActive }) => (isActive ? activeClass : normalClass)}>
             Settings
           </NavLink>
