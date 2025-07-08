@@ -54,7 +54,6 @@ const PostedJobs = () => {
             <th className="py-2 px-4 border-b text-left">Company</th>
                             <th className="py-2 px-4 border-b text-left">Job Unique Id</th>
             <th className="py-2 px-4 border-b text-left">Status</th>
-            <th className="py-2 px-4 border-b text-left">Experience</th>
             <th className="py-2 px-4 border-b text-left">End Date</th>
              <th className="py-2 px-4 border-b text-left">Actions</th>
           </tr>

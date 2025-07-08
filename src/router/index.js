@@ -14,7 +14,10 @@ import EditJob from "../pages/EditJob";
 import PostedJobs from "../pages/PostedJobs"
 import UserWalletPage from "../pages/UserWalletPage";
 import AdminWithdrawals from "../pages/AdminWithdrawals";
-
+import AdminApplicantStatusPage from "../pages/AdminApplicantStatusPage";
+import SendEmailPage from "../pages/SendEmailPage";
+import AdminContactPage from "../pages/AdminContactPage";
+import AdminSendNotification from "../pages/AdminSendNotification";
 
 export const router = createBrowserRouter([
   {
@@ -39,8 +42,11 @@ export const router = createBrowserRouter([
       { path: "adminjob/edit/:id", element: <EditJob /> },
       { path: "user-wallet/:userId", element: <UserWalletPage /> },
       { path: "withdrawals", element: <AdminWithdrawals /> },
-      { path: "/posted-jobs/:userId", element:<PostedJobs /> } 
-
+      { path: "/posted-jobs/:userId", element:<PostedJobs /> } ,
+      { path: "/applicantstatus", element:<AdminApplicantStatusPage /> } ,
+      { path: "/send-email", element: <SendEmailPage /> },
+       { path: "/send-notifications", element: <AdminSendNotification /> },
+      { path: "/contact", element: <AdminContactPage /> }
 
     ],
   },

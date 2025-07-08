@@ -31,6 +31,18 @@ const Sidebar = () => {
             <NavLink to="/withdrawals" className={({ isActive }) => (isActive ? activeClass : normalClass)}>
             Withdrawal Requests
           </NavLink>
+          <NavLink to="/applicantstatus" className={({ isActive }) => (isActive ? activeClass : normalClass)}>
+            Applicant Status
+          </NavLink>
+          <NavLink to="/contact"  className={({ isActive }) => (isActive ? activeClass : normalClass)}>
+            Contact us Msgs
+          </NavLink>
+          <NavLink to="/send-email" className={({ isActive }) => (isActive ? activeClass : normalClass)}>
+            Send Email
+          </NavLink>
+          <NavLink to="/send-notifications"  className={({ isActive }) => (isActive ? activeClass : normalClass)}>
+            Send Notifications
+          </NavLink>
            <NavLink to="/settings" className={({ isActive }) => (isActive ? activeClass : normalClass)}>
             Settings
           </NavLink>
